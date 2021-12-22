@@ -1,0 +1,8 @@
+commands to debug shedule tracing
+
+1.build go file
+> go build -o exec main.go 
+3.set environment variable
+>GOMAXPROCS=1 GOGC=off GODEBUG=schedtrace=200,scheddetail=1 ./exec 
+
+//it will set no of processors = 1, disable garbage collector,emits events every 200ms

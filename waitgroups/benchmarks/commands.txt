@@ -1,0 +1,4 @@
+1.to run benchmark we need to create module
+> go mod init benchmarks 
+2.command to run benchmark
+> go test -bench=. 
